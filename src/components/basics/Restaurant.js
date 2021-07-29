@@ -1,25 +1,40 @@
-import React from 'react'
-import "./style.css"
-import Image from "../../components/basics/image/cofee.jpg"
+import React,{useState} from 'react';
+import "./style.css";
+import Menu from "./menuApi.js";
+import FoodMenu from "./FoodMenu.js";
 
-const myStyle = { color: "green" };
+
+
+
+
 const Restaurant = () => {
+
+    const [menuData, setMenuData] = useState(Menu); //React.useState(intialize);
+
+    const filterItem = (category) => {
+      const updatedList = Menu.filter((curElm) => {
+        return curElm.category === category;
+      });
+
+      setMenuData(updatedList);
+    }
+        
+    
+
     return (
         <>
-            <div className="card-container">
-                <div className="card">
-                    <div className="card-body">
-                        <span className="card-number card-circle subtle">1</span>
-                        <span className="card-author " style={myStyle}>BreakFast</span>
-                        <h2 className="card-title">Coffee</h2>
-                        <span className="card-discription subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores facilis animi veniam assumenda eos eum natus aut aliquid qui adipisci delectus vero unde, enim asperiores? Saepe consequatur natus quisquam.</span>
-                        <div className="card-read">Read</div>
-                    </div>
-                    <img src={Image} alt="images" className="card-media" />
-                    <span className="card-tag">Order Now</span>
-                </div>
+          <nav className="navbar">
+            <div className="btn-group">
+              <button className="btn-group__item" onClick={() =>filterItem("Breakfast")}>Breakfast</button>
+              <button className="btn-group__item" onClick={() =>filterItem("Lunch")}>Lunch</button>
+              <button className="btn-group__item" onClick={() =>filterItem("Snacks")}>Snacks</button>
+              <button className="btn-group__item" onClick={() =>filterItem("Dinner")}>Dinner</button> 
+              <button className="btn-group__item"onClick={() =>setMenuData(Menu)}>All</button>
             </div>
-        </>
+          </nav>
+
+          <FoodMenu menu = {menuData} />
+        </>   
     )
 }
 

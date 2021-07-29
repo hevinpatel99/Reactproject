@@ -24,7 +24,7 @@
     color: rgb(32, 58, 17);
   }
   
-  .main-card--cointainer {
+  .main-card--container {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 500px));
     grid-gap: 50px;
@@ -90,16 +90,17 @@
     text-transform: capitalize;
   }
   
-  .card-description {
-    /* display: inline-block; */
+  /* .card-description {
+    /* display: inline-block; 
     font-weight: 300;
     line-height: 22px;
     margin: 10px 0;
-  }
+  } 
+  */
   
-  .card-read {
+  .card-price {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 6px;
     margin: 5px 0 20px;
@@ -108,7 +109,7 @@
     text-transform: uppercase;
   }
   
-  .card-read:after {
+  .card-price:after {
     background-color: #b8bddd;
     content: "";
     display: block;
