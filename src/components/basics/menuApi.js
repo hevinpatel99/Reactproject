@@ -78,7 +78,7 @@ const Menu = [
 
     {
         id: 10,
-        image: "../image/punjabi thali.jpg",
+        image: "../image/punjabi.jpg",
         name: "Punjabi-thali",
         category: "Lunch",
         price: "Rs." + 200,
@@ -105,7 +105,7 @@ const Menu = [
 
     {
         id: 13,
-        image: "../image/tikha ghooghra.jpg",
+        image: "../image/ghooghra.jpg",
         name: "Ghooghra",
         category: "Snacks",
         price: "Rs." + 40,
@@ -156,7 +156,7 @@ const Menu = [
     },
     {
         id: 19,
-        image: "../image/French-Fries.jpg",
+        image: "../image/Fries.jpg",
         name: "French-Fries",
         category: "Snacks",
         price: "Rs." + 70,
@@ -179,7 +179,7 @@ const Menu = [
     },
     {
         id: 22,
-        image: "../image/pavbhaji-misal.jpg",
+        image: "../image/misalpav.jpg",
         name: "PavBhaji",
         category: "Dinner",
         price: "Rs." + 140,
