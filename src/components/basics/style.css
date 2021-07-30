@@ -6,7 +6,7 @@
   }
   
   html {
-    background: #faf7f2;
+    background:#d8e2da;
     background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
@@ -62,7 +62,7 @@
   }
   
   .card-circle {
-    border: 1px solid #aaa;
+    border: 1px solid #2d1008;
     border-radius: 50%;
     display: inline-block;
     line-height: 22px;
@@ -83,27 +83,20 @@
   
   .card-title {
     font-family: "Cormorant Garamond", serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 60px;
     margin: 10px 0;
     text-transform: capitalize;
   }
   
-  /* .card-description {
-    /* display: inline-block; 
-    font-weight: 300;
-    line-height: 22px;
-    margin: 10px 0;
-  } 
-  */
   
   .card-price {
     cursor: pointer;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 6px;
-    margin: 5px 0 20px;
+    letter-spacing: 3px;
+    margin: 6px 0 20px;
     position: relative;
     text-align: right;
     text-transform: uppercase;
@@ -134,6 +127,7 @@
   
   .card-media {
     max-width: 100%;
+    width: 400px;
     height: auto;
   }
   
@@ -151,7 +145,7 @@
     .main-card--cointainer {
       display: grid;
       grid-template-columns: repeat(1, minmax(200px, 500px));
-      grid-gap: 50px;
+      grid-gap: 33px;
       justify-content: space-around;
     }
   }
@@ -195,8 +189,8 @@
   }
   .btn-group__item:hover,
   .btn-group__item:focus {
-    color: rebeccapurple;
-    box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+    color: rgb(51, 153, 51);
+    box-shadow: inset 0px -20px 0px -15px rgb(26, 59, 11);
   }
   .btn-group__item:focus {
     outline: none;
@@ -205,7 +199,7 @@
     content: "✔️";
     margin-left: 0.5rem;
     display: inline-block;
-    color: rebeccapurple;
+    color: rgb(53, 73, 26);
     position: absolute;
     transform: translatey(10px);
     opacity: 0;

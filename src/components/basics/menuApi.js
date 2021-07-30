@@ -152,7 +152,6 @@ const Menu = [
         name: "Burger",
         category: "Snacks",
         price: "Rs." + 80,
-    
     },
     {
         id: 19,
@@ -201,6 +200,72 @@ const Menu = [
         price: "Rs." + 140,
     
     },
+    {
+        id: 25,
+        image: "../image/milkshake.jpg",
+        name: "Milkshake",
+        category: "Drinks",
+        price: "Rs." + 140,
+    
+    },
+    {
+        id: 26,
+        image: "../image/cold coco.jpg",
+        name: "Coco",
+        category: "Drinks",
+        price: "Rs." + 140,
+    
+    },
+    {
+        id: 27,
+        image: "../image/lempn.jpg",
+        name: "Lemon Juice",
+        category: "Drinks",
+        price: "Rs." + 50,
+    
+    },
+    {
+        id: 28,
+        image: "../image/orange.jpg",
+        name: "Orange Juice",
+        category: "Drinks",
+        price: "Rs." + 50,
+    
+    },
+    {
+        id: 29,
+        image: "../image/coconutwater.jpg",
+        name: "Coconut Water",
+        category: "Drinks",
+        price: "Rs." + 40,
+    
+    },
+
+    {
+        id: 30,
+        image: "../image/icecream.jpg",
+        name: "Ice Cream",
+        category: "Dessert",
+        price: "Rs." + 100,
+    
+    },
+    {
+        id: 31,
+        image: "../image/brownie.jpg",
+        name: "Brownie",
+        category: "Dessert",
+        price: "Rs." + 120,
+    
+    },
+    {
+        id: 32,
+        image: "../image/pestry.jpg",
+        name: "Velvet Pestry",
+        category: "Dessert",
+        price: "Rs." + 100,
+    
+    },
+  
 
 
 ];
